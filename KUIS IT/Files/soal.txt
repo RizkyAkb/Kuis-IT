@@ -1,0 +1,214 @@
+Istilah komputer diambil dari latin computare, artinya adalah…;
+Menulis;
+Mengerjakan;
+Menghitung;
+Membaca;
+Menghitung;
+|
+Tahap proses memasukkan data kedalam komputer disebut…;
+Processing;
+Input;
+Output;
+Origination;
+Input;
+|
+Program yang ditulis untuk mengendalikan dan mengkoordinasi kegiatan dari sistem komputer adalah pengertian dari…;
+Sistem operasi;
+Sistem aplikasi;
+System pengoperasial;
+System pengolahan;
+Sistem operasi;
+|
+Program yang ditujukan untuk menyelesaikan suatu permasalahan dalam aplikasi tertentu adalah pengertian dari…;
+Trackball;
+Touch Screen;
+Light Pen;
+Scan;
+Scan;
+|
+Sisa pembagian 5^2007 adalah…;
+14;
+18;
+22;
+20;
+20;
+|
+Salah satu tugas sistem operasi adalah…;
+Memanagemen memory;
+Perangkat Lunak;
+Mendeteksi hardware;
+Hardware;
+Mendeteksi hardware;
+|
+Dalam menyusun suatu program, langkah pertama yang harus dilakukan adalah…;
+Membuat program;
+Membuat Algoritma;
+Membeli komputer;
+Proses;
+Membuat Algoritma;
+|
+Sebuah prosedur langkah demi langkah yang pasti untuk menyelesaikan sebuah masalah disebut…;
+Algoritma;
+Proses;
+Program;
+Prosesor;
+Algoritma;
+|
+Dalam python, pemberian nama variabel yang benar adalah…;
+&nama_var;
+Nama_var;
+Nama var;
+%nama_var;
+Nama_var;
+|
+Akibat mulai menggunakan bibit yang belum teruji maka panen beras tahun ini menurun. Kalimat berikut ini yang paling benar adalah...;
+Petani merugi;
+Panen beras tahun ini sama dengan tahun lalu;
+Bibit belum teruji dipakai petani tahun ini;
+Bibit baru membuat petani merugi;
+Bibit belum teruji dipakai petani tahun ini;
+|
+Terdapat berapa bit dalam 1 byte?;
+8;
+16;
+32;
+64;
+8;
+|
+Apa kepanjangan dari  WAN?;
+World Area Network;
+Word Area Network;
+Wide Area Network;
+Wumbo Area Network;
+Wide Area Network;
+|
+Contoh penggunaan peer to peer?;
+WhatsApp;
+NFC;
+Termuc;
+Mobile Legends Bang Bang;
+NFC;
+|
+Contoh dari perubahan sinyal analog ke digital?;
+Membajak sawah;
+Memukul pohon pisang;
+Menonton TV analog;
+Menelepon antara telepon seluler dengan telepon seluler;
+Menelepon antara telepon seluler dengan telepon seluler;
+|
+Manakah yang merupakan jenis data dinamis?;
+List;
+String;
+Integer;
+Boolean;
+List;
+|
+Game kuis ini dibuat dengan menggunakan aplikasi?;
+Adobe Flash;
+Adobe Animate;
+Construct 2;
+Corel Draw;
+Construct 2;
+|
+Yang mana contoh aplikasi vektor?;
+Adobe Photoshop;
+Corel Draw;
+Adobe reader;
+Ms.Excel;
+Corel Draw;
+|
+Yang mana contoh aplikasi bitmap?;
+PyCharm;
+Point Blank;
+Lost Saga;
+Adobe Photoshop;
+Adobe Photoshop;
+|
+Untuk menginstall LINUX kita dapat menggunakan aplikasi ?;
+Virtualbox;
+WinRar;
+Google Chrome;
+Winamp;
+Virtualbox;
+|
+Jika di windows kita kenal Command Prompt maka di LINUX ada?;
+Python;
+Termux;
+Terminal;
+C++;
+Terminal;
+|
+Program yang ditujukan untuk menyelesaikan suatu permasalahan dalam aplikasi tertentu adalah pengertian dari…;
+Application software;
+System software;
+Operating software;
+Finishing software;
+Application software;
+|
+Tahun berapa windows 10 rilis untuk umum?;
+2014;
+2015;
+2016;
+2017;
+2015;
+|
+Kepanjangan dari WWW adalah…;
+Wide web world;
+World wide web;
+Web world wide;
+Web wide world;
+World wide web;
+|
+Pada saat pertama kali computer dihidupkan, maka akan ada proses menyiapkan system operasi disebut…;
+Login;
+Log off;
+Booting;
+Preparing;
+Booting;
+|
+Software yang digunakan untuk membuat animasi adalah…;
+Dreamweaver;
+Corel draw;
+Adobe animate;
+Animate power maker;
+Adobe animate;
+|
+Kumpulan titik disebut…;
+Bitmap;
+Pixel;
+Dotgroup;
+Resolusi;
+Pixel;
+| 
+Apa kepanjangan dari HTML?;
+Hyper Text Markup Language;
+High Text Markup Languages;
+High Text Markup Language;
+Hyper Text Markup Languages;
+Hyper Text Markup Language;
+|
+Contoh dari bahasa pemrograman tingkat rendah adalah..;
+Python;
+Ruby; 
+C#;
+Assembly;
+Assembly;
+|
+Shortcut untuk menjalankan code/module pada aplikasi idle python adalah…;
+F4;
+F5;
+F3;
+F12;
+F5;
+|
+Sebuah prosedur langkah demi langkah yang pasti untuk menyelesaikan sebuah masalah di sebut…;
+Algoritma;
+Progres;
+Diagram;
+Prosedur; 
+Algoritma; 
+|
+
+
+
+

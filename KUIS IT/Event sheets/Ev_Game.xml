@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Ev_Game</name>
+    <events>
+        <variable constant="0" name="timer" sid="969792096198225" static="0" type="number">500</variable>
+        <variable constant="0" name="highscore" sid="627384015957239" static="0" type="number">0</variable>
+        <variable constant="0" name="score" sid="579681950316165" static="0" type="number">0</variable>
+        <variable constant="0" name="soal_terjawab" sid="594280515720839" static="0" type="number">0</variable>
+        <variable constant="0" name="kunci_jawaban" sid="234655021684441" static="0" type="text">&quot;&quot;</variable>
+        <variable constant="0" name="nomor_soal" sid="213489066289114" static="0" type="number">0</variable>
+        <variable constant="0" name="random_angka" sid="168163965089038" static="0" type="number">0</variable>
+        <event-block sid="414484122666618">
+            <conditions>
+                <condition id="0" name="On function" sid="245385399488704" type="Function">
+                    <param id="0" name="Name">&quot;SetupUrutanSoal&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Set size" sid="361209383858799" type="UrutanSoal">
+                    <param id="0" name="Width">TOTAL_QUIZ</param>
+                    <param id="1" name="Height">1</param>
+                    <param id="2" name="Depth">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="844855096642943">
+                    <conditions>
+                        <condition id="-12" name="Repeat" sid="567055814684532" type="System">
+                            <param id="0" name="Count">TOTAL_QUIZ</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Set at X" sid="473727278303988" type="UrutanSoal">
+                            <param id="0" name="X">loopindex</param>
+                            <param id="1" name="Value">loopindex</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="655712830031509">
+            <conditions>
+                <condition id="0" name="On function" sid="583275638689272" type="Function">
+                    <param id="0" name="Name">&quot;getRandomSoal&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="893818129125705" type="System">
+                    <param id="0" name="Variable">random_angka</param>
+                    <param id="1" name="Value">int(random(0,UrutanSoal.Width))</param>
+                </action>
+                <action id="-9" name="Set value" sid="231532264567481" type="System">
+                    <param id="0" name="Variable">nomor_soal</param>
+                    <param id="1" name="Value">UrutanSoal.At(random_angka)</param>
+                </action>
+                <action id="0" name="Set text" sid="128104337927041" type="game_soal">
+                    <param id="0" name="Text">trim(tokenat(Array.At(nomor_soal),0,&quot;;&quot;))</param>
+                </action>
+                <action id="0" name="Set text" sid="328337817966393" type="game_tx1">
+                    <param id="0" name="Text">trim(tokenat(Array.At(nomor_soal),1,&quot;;&quot;))</param>
+                </action>
+                <action id="0" name="Set text" sid="657183007035635" type="game_tx2">
+                    <param id="0" name="Text">trim(tokenat(Array.At(nomor_soal),2,&quot;;&quot;))</param>
+                </action>
+                <action id="0" name="Set text" sid="388548045651360" type="game_tx3">
+                    <param id="0" name="Text">trim(tokenat(Array.At(nomor_soal),3,&quot;;&quot;))</param>
+                </action>
+                <action id="0" name="Set text" sid="457564835605909" type="game_tx4">
+                    <param id="0" name="Text">trim(tokenat(Array.At(nomor_soal),4,&quot;;&quot;))</param>
+                </action>
+                <action id="-9" name="Set value" sid="440587386535085" type="System">
+                    <param id="0" name="Variable">kunci_jawaban</param>
+                    <param id="1" name="Value">trim(tokenat(Array.At(nomor_soal),5,&quot;;&quot;))</param>
+                </action>
+                <action id="9" name="Delete" sid="179415116805405" type="UrutanSoal">
+                    <param id="0" name="Index">random_angka</param>
+                    <param id="1" name="Axis">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="806865517043934">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="621408071307746" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="417078691859048" type="Function">
+                    <param id="0" name="Name">&quot;SetupUrutanSoal&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="0" name="Call function" sid="471657725760046" type="Function">
+                    <param id="0" name="Name">&quot;getRandomSoal&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-9" name="Set value" sid="129759074663247" type="System">
+                    <param id="0" name="Variable">score</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>cek jawaban</comment>
+        <event-block sid="680681497183063">
+            <conditions>
+                <condition id="0" name="On function" sid="224329510227801" type="Function">
+                    <param id="0" name="Name">&quot;cekJawaban&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="837190699771924">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="695087441140764" type="System">
+                            <param id="0" name="Variable">kunci_jawaban</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">Function.Param(0)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="905095169606272" type="System">
+                            <param id="0" name="Variable">score</param>
+                            <param id="1" name="Value">10</param>
+                        </action>
+                        <action id="0" name="Set text" sid="394995580475020" type="game_scoretx">
+                            <param id="0" name="Text">score</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="217640787304940" type="System">
+                            <param id="0" name="Variable">soal_terjawab</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="728786605671900" type="System">
+                            <param id="0" name="Seconds">0.3</param>
+                        </action>
+                        <action id="0" name="Call function" sid="382510150938142" type="Function">
+                            <param id="0" name="Name">&quot;getRandomSoal&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="0" name="Call function" sid="246188314820899" type="Function">
+                            <param id="0" name="Name">&quot;resetTimer&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="778200149074999">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="832434355571131" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="760574081236051" type="System">
+                            <param id="0" name="Layout">GameOver</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="663568658326487" type="System">
+                            <param id="0" name="Variable">soal_terjawab</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="132345445848261">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="980834814007626" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">game_tx1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="711068960220945" type="Function">
+                    <param id="0" name="Name">&quot;cekJawaban&quot;</param>
+                    <param id="1" name="Parameter {n}">game_tx1.Text</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="984763783699169">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="523696339593121" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">game_tx2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="559981207426492" type="Function">
+                    <param id="0" name="Name">&quot;cekJawaban&quot;</param>
+                    <param id="1" name="Parameter {n}">game_tx2.Text</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="593942443501104">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="333745618539996" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">game_tx3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="384402319981342" type="Function">
+                    <param id="0" name="Name">&quot;cekJawaban&quot;</param>
+                    <param id="1" name="Parameter {n}">game_tx3.Text</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="622550680292177">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="332352484012947" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">game_tx4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="843524688968599" type="Function">
+                    <param id="0" name="Name">&quot;cekJawaban&quot;</param>
+                    <param id="1" name="Parameter {n}">game_tx4.Text</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>highscore</comment>
+        <event-block sid="269781901307325">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="899034665812655" type="System">
+                    <param id="0" name="Variable">score</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">highscore</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="606728930919386" type="System">
+                    <param id="0" name="Variable">highscore</param>
+                    <param id="1" name="Value">score</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>timer</comment>
+        <event-block sid="594613732192069">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="485042354686906" type="System">
+                    <param id="0" name="Interval (seconds)">0.2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-5" name="Set width" sid="722621775869892" type="game_timer">
+                    <param id="0" name="Width">Self.Width-20</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="399379487482410">
+            <conditions>
+                <condition id="-5" name="Compare width" sid="119174215957783" type="game_timer">
+                    <param id="0" name="Comparison">3</param>
+                    <param id="1" name="Width">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="558557924214511" type="System">
+                    <param id="0" name="Layout">GameOver</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="506577206765541">
+            <conditions>
+                <condition id="0" name="On function" sid="716821117238045" type="Function">
+                    <param id="0" name="Name">&quot;resetTimer&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-5" name="Set width" sid="748337105872860" type="game_timer">
+                    <param id="0" name="Width">timer</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

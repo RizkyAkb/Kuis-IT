@@ -1,0 +1,560 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Kuis</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>cljik6pejwlx</unique-id>
+    <saved-with-version>27900</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="AJAX" version="1">AJAX</plugin>
+        <plugin author="Scirra" id="Arr" version="1">Array</plugin>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+    </used-plugins>
+    <used-behaviors />
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>900</width>
+        <height>1600</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">Chrome</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="bg_menu" sid="537865718341693">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="431208460445834" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500586" original-source="D:\DATA KULIAH\mulmed dasar\game kuis it\bg.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="play" sid="878512419678768">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="947216360518833" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\DATA KULIAH\mulmed dasar\game kuis it\menu\icon.png">
+                        <collision-poly>
+                            <point x="0.150685" y="0.150685" />
+                            <point x="0.5" y="0.00684932" />
+                            <point x="0.849315" y="0.150685" />
+                            <point x="1" y="0.5" />
+                            <point x="0.856164" y="0.856164" />
+                            <point x="0.5" y="1" />
+                            <point x="0.150685" y="0.849315" />
+                            <point x="0.00684932" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Mouse" sid="858633827800666">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="menu_board" sid="645410293796422">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="475116254982111" speed="5">
+                    <frame duration="1" hotspotX="0.5006" hotspotY="0.501285" original-source="D:\DATA KULIAH\mulmed dasar\game kuis it\menu\Title Frame.png">
+                        <collision-poly>
+                            <point x="0.00480192" y="0.0102828" />
+                            <point x="0.4994" y="0" />
+                            <point x="0.991597" y="0.0179949" />
+                            <point x="0.989196" y="0.976864" />
+                            <point x="0.4994" y="1" />
+                            <point x="0.0120048" y="0.974293" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="menu_title" sid="811755017724287">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="373871052666205" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502075" original-source="D:\DATA KULIAH\mulmed dasar\game kuis it\menu\Title.png">
+                        <collision-poly>
+                            <point x="0.0264624" y="0.0788382" />
+                            <point x="0.973538" y="0.0788382" />
+                            <point x="0.93454" y="0.497925" />
+                            <point x="0.93454" y="0.804979" />
+                            <point x="0.0362117" y="0.892116" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="menu_info" sid="269152645128730">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="359554894908004" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502564" original-source="D:\DATA KULIAH\mulmed dasar\game kuis it\menu\Rectangle.png">
+                        <collision-poly>
+                            <point x="0.0256849" y="0.0769231" />
+                            <point x="0.5" y="0" />
+                            <point x="0.974315" y="0.0769231" />
+                            <point x="0.981164" y="0.497436" />
+                            <point x="0.955479" y="0.866667" />
+                            <point x="0.5" y="0.887179" />
+                            <point x="0.0445205" y="0.866667" />
+                            <point x="0.0171233" y="0.497436" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="menu_info_txt" sid="370869342436523">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="bg_info" sid="502674877436575">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="304134300593869" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="info_box" sid="381187559259452">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="535321629077403" speed="5">
+                    <frame duration="1" hotspotX="0.500511" hotspotY="0.500499" original-source="D:\DATA KULIAH\mulmed dasar\game kuis it\Skor\Vector Smart Object-1.png">
+                        <collision-poly>
+                            <point x="0.00867888" y="0.00860421" />
+                            <point x="0.991321" y="0.00860421" />
+                            <point x="0.990357" y="0.99044" />
+                            <point x="0.0096432" y="0.99044" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="info_title" sid="277825948349784">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="info_back" sid="701904063720559">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="314563259635380" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\DATA KULIAH\mulmed dasar\game kuis it\Pertanyaan\Prev.png">
+                        <collision-poly>
+                            <point x="0.163793" y="0.161017" />
+                            <point x="0.5" y="0.00847458" />
+                            <point x="0.836207" y="0.161017" />
+                            <point x="0.922414" y="0.5" />
+                            <point x="0.758621" y="0.762712" />
+                            <point x="0.5" y="0.847458" />
+                            <point x="0.241379" y="0.762712" />
+                            <point x="0.0775862" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="info_txt" sid="276915867936800">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="info_txt1" sid="110574367277593">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="game_title" sid="150636574518581">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="game_box" sid="545896572390998">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="774225387882651" speed="5">
+                    <frame duration="1" hotspotX="0.500511" hotspotY="0.500499" original-source="D:\DATA KULIAH\mulmed dasar\game kuis it\Skor\Vector Smart Object-1.png">
+                        <collision-poly>
+                            <point x="0.00867888" y="0.00860421" />
+                            <point x="0.991321" y="0.00860421" />
+                            <point x="0.990357" y="0.99044" />
+                            <point x="0.0096432" y="0.99044" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="game_soal" sid="677776270611210">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="game_jwb1" sid="837353341445532">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="926643786125549" speed="5">
+                    <frame duration="1" hotspotX="0.501712" hotspotY="0.502564" original-source="D:\DATA KULIAH\mulmed dasar\game kuis it\menu\Rectangle.png">
+                        <collision-poly>
+                            <point x="0.0422961" y="0.138614" />
+                            <point x="0.498489" y="0" />
+                            <point x="0.957704" y="0.138614" />
+                            <point x="1" y="0.49505" />
+                            <point x="0.957704" y="0.861386" />
+                            <point x="0.498489" y="1" />
+                            <point x="0.0422961" y="0.861386" />
+                            <point x="0" y="0.49505" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="game_jwb2" sid="193228167221958">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="938524134449496" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502564" original-source="D:\DATA KULIAH\mulmed dasar\game kuis it\menu\Rectangle.png">
+                        <collision-poly>
+                            <point x="0.0256849" y="0.0769231" />
+                            <point x="0.5" y="0" />
+                            <point x="0.974315" y="0.0769231" />
+                            <point x="0.981164" y="0.497436" />
+                            <point x="0.955479" y="0.866667" />
+                            <point x="0.5" y="0.887179" />
+                            <point x="0.0445205" y="0.866667" />
+                            <point x="0.0171233" y="0.497436" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="game_jwb3" sid="279067084901313">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="725082375683907" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502564" original-source="D:\DATA KULIAH\mulmed dasar\game kuis it\menu\Rectangle.png">
+                        <collision-poly>
+                            <point x="0.0256849" y="0.0769231" />
+                            <point x="0.5" y="0" />
+                            <point x="0.974315" y="0.0769231" />
+                            <point x="0.981164" y="0.497436" />
+                            <point x="0.955479" y="0.866667" />
+                            <point x="0.5" y="0.887179" />
+                            <point x="0.0445205" y="0.866667" />
+                            <point x="0.0171233" y="0.497436" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="game_jwb4" sid="648511723854303">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="432515943043808" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502564" original-source="D:\DATA KULIAH\mulmed dasar\game kuis it\menu\Rectangle.png">
+                        <collision-poly>
+                            <point x="0.0256849" y="0.0769231" />
+                            <point x="0.5" y="0" />
+                            <point x="0.974315" y="0.0769231" />
+                            <point x="0.981164" y="0.497436" />
+                            <point x="0.955479" y="0.866667" />
+                            <point x="0.5" y="0.887179" />
+                            <point x="0.0445205" y="0.866667" />
+                            <point x="0.0171233" y="0.497436" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="game_tx1" sid="263067392354805">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="game_tx2" sid="224104252067621">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="game_tx3" sid="818215490777045">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="game_tx4" sid="663594768525809">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="AJAX" sid="832187303716417">
+            <plugin id="AJAX" />
+        </object-type>
+        <object-type name="Function" sid="478566013003919">
+            <plugin id="Function" />
+        </object-type>
+        <object-type global="1" name="Array" sid="538644111735303">
+            <plugin id="Arr" />
+        </object-type>
+        <object-type name="menu_exit" sid="996990316323456">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="150828130502420" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502564" original-source="D:\DATA KULIAH\mulmed dasar\game kuis it\menu\Rectangle.png">
+                        <collision-poly>
+                            <point x="0.0256849" y="0.0769231" />
+                            <point x="0.5" y="0" />
+                            <point x="0.974315" y="0.0769231" />
+                            <point x="0.981164" y="0.497436" />
+                            <point x="0.955479" y="0.866667" />
+                            <point x="0.5" y="0.887179" />
+                            <point x="0.0445205" y="0.866667" />
+                            <point x="0.0171233" y="0.497436" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="menu_exit_tx" sid="274262455211743">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Browser" sid="721459606296584">
+            <plugin id="Browser" />
+        </object-type>
+        <object-type global="1" name="UrutanSoal" sid="662014222478803">
+            <plugin id="Arr" />
+        </object-type>
+        <object-type name="bg_gameover" sid="374082675605212">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="943107090637029" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500586" original-source="D:\DATA KULIAH\mulmed dasar\game kuis it\bg.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="over_box" sid="211863933895793">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="126716619027168" speed="5">
+                    <frame duration="1" hotspotX="0.500511" hotspotY="0.500499" original-source="D:\DATA KULIAH\mulmed dasar\game kuis it\Skor\Vector Smart Object-1.png">
+                        <collision-poly>
+                            <point x="0.0275792" y="0.026973" />
+                            <point x="0.499489" y="0" />
+                            <point x="0.972421" y="0.026973" />
+                            <point x="1" y="0.499501" />
+                            <point x="0.972421" y="0.973027" />
+                            <point x="0.499489" y="1" />
+                            <point x="0.0275792" y="0.973027" />
+                            <point x="0" y="0.499501" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="over_banner" sid="742639484114533">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="932921917566918" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501502" original-source="D:\DATA KULIAH\mulmed dasar\game kuis it\Skor\Vector Smart Object.png">
+                        <collision-poly>
+                            <point x="0.193069" y="0.468468" />
+                            <point x="0.5" y="0" />
+                            <point x="0.806931" y="0.468468" />
+                            <point x="0.875" y="0.498498" />
+                            <point x="0.920792" y="0.807808" />
+                            <point x="0.0792079" y="0.807808" />
+                            <point x="0.125" y="0.498498" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="over_txover" sid="212950983641154">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="502383018924057" speed="5">
+                    <frame duration="1" hotspotX="0.500924" hotspotY="0.5" original-source="D:\DATA KULIAH\mulmed dasar\game kuis it\Skor\GAME OVER.png">
+                        <collision-poly>
+                            <point x="0.0443623" y="0.235294" />
+                            <point x="0.955638" y="0.235294" />
+                            <point x="0.990758" y="0.5" />
+                            <point x="0.992606" y="0.960784" />
+                            <point x="0.0166359" y="0.911765" />
+                            <point x="0.00369686" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="over_piala" sid="446974472327892">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="845849493395497" speed="5">
+                    <frame duration="1" hotspotX="0.500921" hotspotY="0.5" original-source="D:\DATA KULIAH\mulmed dasar\game kuis it\Skor\Trophy.png">
+                        <collision-poly>
+                            <point x="0.235727" y="0.374269" />
+                            <point x="0.499079" y="0.0526316" />
+                            <point x="0.968692" y="0.5" />
+                            <point x="0.854512" y="0.769006" />
+                            <point x="0.499079" y="0.935673" />
+                            <point x="0.152855" y="0.75731" />
+                            <point x="0.0349908" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="over_bgpoin" sid="618430912072837">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="446423598446696" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\DATA KULIAH\mulmed dasar\game kuis it\Skor\Vector Smart Object-3.png">
+                        <collision-poly>
+                            <point x="0.0355392" y="0.146465" />
+                            <point x="0.960784" y="0.161616" />
+                            <point x="1" y="0.5" />
+                            <point x="0.966912" y="0.863636" />
+                            <point x="0.0355392" y="0.853535" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="over_bckmainmenu" sid="286116888407366">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="628900414099729" speed="5">
+                    <frame duration="1" hotspotX="0.501511" hotspotY="0.504951" original-source="D:\DATA KULIAH\mulmed dasar\game kuis it\Skor\Vector Smart Object-2.png">
+                        <collision-poly>
+                            <point x="0.0256849" y="0.0769231" />
+                            <point x="0.5" y="0" />
+                            <point x="0.974315" y="0.0769231" />
+                            <point x="0.981164" y="0.497436" />
+                            <point x="0.955479" y="0.866667" />
+                            <point x="0.5" y="0.887179" />
+                            <point x="0.0445205" y="0.866667" />
+                            <point x="0.0171233" y="0.497436" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="over_kembali" sid="823089572081121">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="over_txscr" sid="606076511862831">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="over_skor" sid="363022108393274">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="info_caramain" sid="996600225054947">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="game_score" sid="399628379634365">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="740615875674189" speed="5">
+                    <frame duration="1" hotspotX="0.501511" hotspotY="0.504951" original-source="D:\DATA KULIAH\mulmed dasar\game kuis it\Skor\Vector Smart Object-2.png">
+                        <collision-poly>
+                            <point x="0.0422961" y="0.138614" />
+                            <point x="0.498489" y="0" />
+                            <point x="0.957704" y="0.138614" />
+                            <point x="1" y="0.49505" />
+                            <point x="0.957704" y="0.861386" />
+                            <point x="0.498489" y="1" />
+                            <point x="0.0422961" y="0.861386" />
+                            <point x="0" y="0.49505" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="game_scoretx" sid="299628440922373">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="over_hgbg" sid="439823292163056">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="136771325019254" speed="5">
+                    <frame duration="1" hotspotX="0.501511" hotspotY="0.504951" original-source="D:\DATA KULIAH\mulmed dasar\game kuis it\Skor\Vector Smart Object-2.png">
+                        <collision-poly>
+                            <point x="0.0422961" y="0.138614" />
+                            <point x="0.498489" y="0" />
+                            <point x="0.957704" y="0.138614" />
+                            <point x="1" y="0.49505" />
+                            <point x="0.957704" y="0.861386" />
+                            <point x="0.498489" y="1" />
+                            <point x="0.0422961" y="0.861386" />
+                            <point x="0" y="0.49505" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="over_highscore" sid="491630179710454">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="game_skorbg" sid="281801293996875">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="439404312194417" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\DATA KULIAH\mulmed dasar\game kuis it\Skor\Rectangle.png">
+                        <collision-poly>
+                            <point x="0.0176056" y="0.0619835" />
+                            <point x="0.5" y="0" />
+                            <point x="0.982394" y="0.0619835" />
+                            <point x="1" y="0.5" />
+                            <point x="0.982394" y="0.938017" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0187793" y="0.933884" />
+                            <point x="0.00117371" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="game_timer" sid="153726879950991">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\DATA KULIAH\mulmed dasar\game kuis it\Skor\Background.png" />
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Mainmenu.xml</layout>
+        <layout>Game.xml</layout>
+        <layout>Info.xml</layout>
+        <layout>GameOver.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Ev_Mainmenu.xml</event-sheet>
+        <event-sheet>Ev_Game.xml</event-sheet>
+        <event-sheet>Ev_Info.xml</event-sheet>
+        <event-sheet>Ev_GameOver.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Mouse" uid="3" />
+        <global-instance type="AJAX" uid="29" />
+        <global-instance type="Function" uid="30" />
+        <global-instance type="Browser" uid="35" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+        <file name="soal.txt" />
+    </files-folder>
+</c2project>

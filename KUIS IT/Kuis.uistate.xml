@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the project was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <configurations>
+        <active>
+            <configuration name="HTML5" />
+        </active>
+        <display name="HTML5" />
+    </configurations>
+    <open-tabs>
+        <layout order="1">Mainmenu</layout>
+        <layout order="2">Game</layout>
+        <layout active="1" order="3">Info</layout>
+        <layout order="4">GameOver</layout>
+        <event-sheet order="5">Ev_Mainmenu</event-sheet>
+        <event-sheet order="6">Ev_Game</event-sheet>
+        <event-sheet order="7">Ev_GameOver</event-sheet>
+    </open-tabs>
+    <properties>
+        <property expanded="1" name="About" />
+        <property expanded="1" name="Project settings" />
+        <property expanded="1" name="Window Size" />
+        <property expanded="1" name="Configuration Settings" />
+    </properties>
+    <families-expanded root="1" />
+    <folders-expanded>
+        <folder expanded="1" path="object-folder/" />
+        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="1" path="event-folder/" />
+        <folder expanded="1" path="file-folder/" />
+        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="1" path="music-folder/" />
+        <folder expanded="0" path="file-folder/Icons/" />
+        <folder expanded="1" path="animation-folder/bg_menu/" />
+        <folder expanded="1" path="animation-folder/play/" />
+        <folder expanded="1" path="animation-folder/menu_board/" />
+        <folder expanded="1" path="animation-folder/menu_title/" />
+        <folder expanded="1" path="animation-folder/menu_info/" />
+        <folder expanded="1" path="animation-folder/bg_info/" />
+        <folder expanded="1" path="animation-folder/info_box/" />
+        <folder expanded="1" path="animation-folder/info_back/" />
+        <folder expanded="1" path="animation-folder/game_box/" />
+        <folder expanded="1" path="animation-folder/game_jwb1/" />
+        <folder expanded="1" path="animation-folder/game_jwb2/" />
+        <folder expanded="1" path="animation-folder/game_jwb3/" />
+        <folder expanded="1" path="animation-folder/game_jwb4/" />
+        <folder expanded="1" path="animation-folder/menu_exit/" />
+        <folder expanded="1" path="animation-folder/bg_gameover/" />
+        <folder expanded="1" path="animation-folder/over_box/" />
+        <folder expanded="1" path="animation-folder/over_banner/" />
+        <folder expanded="1" path="animation-folder/over_txover/" />
+        <folder expanded="1" path="animation-folder/over_piala/" />
+        <folder expanded="1" path="animation-folder/over_bgpoin/" />
+        <folder expanded="1" path="animation-folder/over_bckmainmenu/" />
+        <folder expanded="1" path="animation-folder/game_score/" />
+        <folder expanded="1" path="animation-folder/over_hgbg/" />
+        <folder expanded="1" path="animation-folder/game_skorbg/" />
+    </folders-expanded>
+</c2uistate>
